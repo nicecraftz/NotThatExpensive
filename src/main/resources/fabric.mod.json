@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "notthatexpensive",
+  "version": "${version}",
+  "name": "NotThatExpensive",
+  "description": "It ain't that expensive",
+  "authors": [
+    "nicecraftz"
+  ],
+  "contact": {
+    "website": "nicecraftz.tech",
+    "repo": "https://github.com/nicecraftz/NotThatExpensive"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/notthatexpensive/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "tech.nicecraftz.notthatexpensive.client.NotThatExpensiveClient"
+    ],
+    "main": [
+      "tech.nicecraftz.notthatexpensive.NotThatExpensive"
+    ]
+  },
+  "mixins": [
+    "notthatexpensive.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
